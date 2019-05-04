@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  background-color: white;
+  background-color: rgba(20, 128, 122, 0.938);
   
 }
 
 table#internetbasics{
-  background-color: rgb(77, 147, 228);
-  border: 1px solid black rgb(77, 147, 228);
+  background-color: rgba(20, 128, 122, 0.938);
+  border: 1px solid black rgba(20, 128, 122, 0.938);
 }
 
 h2 {
@@ -18,8 +18,8 @@ li{
 }
 
 li a {
-  display: ;
-  color: black;
+  display: inline;
+  color: rgba(20, 128, 122, 0.938);
   font-size: 30px;
   
   padding: 14px 16px;
@@ -33,3 +33,15 @@ ul {
   overflow: hidden;
   background-color: #333;
 }
+
+/*#left, #right {
+	background: #a5ebff;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+    #right { right: 0; }
+    */
