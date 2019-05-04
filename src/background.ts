@@ -1,2 +1,3 @@
-console.log("test");
-let x = 4;
+chrome.runtime.onInstalled.addListener((details) => {
+	console.log(details);
+});
