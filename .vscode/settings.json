@@ -13,5 +13,8 @@
     },
     "[json]": {
         "editor.tabSize": 4
+    },
+    "[html]": {
+        "editor.tabSize": 2
     }
 }
