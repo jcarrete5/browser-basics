@@ -36,7 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 function inject_html(page) {
     return __awaiter(this, void 0, void 0, function () {
-        var response, html, e_1;
+        var response, html, container, e_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -47,7 +47,10 @@ function inject_html(page) {
                     return [4 /*yield*/, response.text()];
                 case 2:
                     html = _a.sent();
-                    document.body.innerHTML += html;
+                    container = document.createElement("div");
+                    container.id = "wc-tut-scoped-content";
+                    container.innerHTML = html;
+                    document.body.appendChild(container);
                     return [3 /*break*/, 4];
                 case 3:
                     e_1 = _a.sent();
