@@ -1,3 +1,6 @@
-chrome.runtime.onInstalled.addListener((details) => {
-	console.log(details);
+chrome.runtime.onInstalled.addListener(() => {
+	chrome.windows.create({
+		type: "panel",
+		focused: true
+	})
 });
