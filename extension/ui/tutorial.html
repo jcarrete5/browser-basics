@@ -1,43 +1,62 @@
 <style>
-	.wc-tut-container {
-		background-color: #02142B;
-		position: fixed;
-		top: 5px;
-		left: 8%;
-		padding: 20px;
-		box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.308);
-		border-radius: 3px;
-		z-index: 99999;
-	}
+    #wc-tut-container {
+        background-color: #02142B;
+        position: fixed;
+        padding: 20px;
+        box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.308);
+        border-radius: 3px;
+        z-index: 99999;
 
-	.wc-tut-container h1, .wc-tut-container h2, .wc-tut-container h3, .wc-tut-container h4, .wc-tut-container h5 {
-		font-family: Arial, Helvetica, sans-serif !important;
-		color: #fff;
-		padding: 0;
-		margin: 0;
-	}
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-	.wc-tut-container h2 {
-		font-size: 19.5px;
-	}
+    #wc-tut-container h1, #wc-tut-container h2, #wc-tut-container h3, #wc-tut-container h4, #wc-tut-container h5 {
+        font-family: Arial, Helvetica, sans-serif !important;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+    }
 
-	.wc-tut-container h4 {
-		opacity: 0.6;
-		margin-bottom: 10px;
-		font-size: 13px;
-	}
+    #wc-tut-container h2 {
+        font-size: 19.5px;
+    }
 
-	.wc-tut-container button {
-		padding: 3px 15px;
-		margin: 0;
-		margin-top: 15px;
-		margin-left: auto;
+    #wc-tut-container h4 {
+        opacity: 0.6;
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
 
-		border: none;
-	}
+    #wc-tut-container button {
+        padding: 5px 15px !important;
+        margin: 0 !important;
+        margin-top: 15px !important;
+        /* float: right; */
+
+        border: none !important;
+
+        background-color: #f7e070;
+        border-radius: 3px;
+    }
+
+    .tutorial-1 {
+        top: 5px;
+        left: 8%;
+    }
 </style>
-<div class="wc-tut-container">
-	<h4>Step 1/5</h4>
-	<h2>Welcome to Clippy</h2>
-	<button>Next</button>
+<script>
+    let w = window.innerWidth;
+    let h = window.innerHeight;
+
+    let container = document.getElementById("wc-tut-container");
+    // container.
+</script>
+
+<div id="wc-tut-container">
+    <h4>Step 1/5</h4>
+    <h2>Welcome to Clippy</h2>
+    <button>Next</button>
 </div>
