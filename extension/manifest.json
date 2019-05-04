@@ -7,6 +7,6 @@
     "default_popup": "ui/popup.html"
   },
   "icons": {
-    "128": "ui/static/img/icon.png"
+    "128": "ui/img/icon.png"
   }
 }
