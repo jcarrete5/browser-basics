@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "learn": "ws -d learn_modules/public",
-    "sass": "node-sass -w --output-style compressed -o learn_modules/public/css -x learn_modules/scss"
+    "learn": "ws -d extension/learn_modules",
+    "sass": "node-sass -w --output-style compressed -o extension/learn_modules/css -x scss"
   },
   "repository": {
     "type": "git",
