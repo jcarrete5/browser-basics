@@ -19,10 +19,9 @@
     "url": "https://github.com/jcarrete5/codefest-2019/issues"
   },
   "homepage": "https://github.com/jcarrete5/codefest-2019#readme",
-  "dependencies": {
-    "@types/chrome": "0.0.83"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@types/chrome": "0.0.83",
     "local-web-server": "^2.6.1",
     "node-sass": "^4.12.0"
   }
