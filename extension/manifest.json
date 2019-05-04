@@ -7,8 +7,8 @@
     "default_popup": "ui/popup.html"
   },
   "background": {
-	"scripts": ["background.js"],
-	"persistant": false
+    "scripts": ["background.js"],
+    "persistant": false
   },
   "icons": {
     "128": "ui/img/icon.png"
