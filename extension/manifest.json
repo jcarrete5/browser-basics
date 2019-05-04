@@ -6,6 +6,10 @@
   "browser_action": {
     "default_popup": "ui/popup.html"
   },
+  "background": {
+	"scripts": ["background.js"],
+	"persistant": false
+  },
   "icons": {
     "128": "ui/static/img/icon.png"
   }
