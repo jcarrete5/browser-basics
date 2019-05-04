@@ -10,7 +10,18 @@
     "scripts": ["background.js"],
     "persistant": false
   },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "match_about_blank": true,
+      "js": ["tutorial_content.js"]
+    }
+  ],
   "icons": {
     "128": "ui/img/icon.png"
-  }
+  },
+  "permissions": ["activeTab"],
+  "web_accessible_resources": [
+    "ui/tutorial.html"
+  ]
 }

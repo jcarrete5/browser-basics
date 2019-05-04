@@ -1,6 +1,8 @@
 chrome.runtime.onInstalled.addListener(() => {
-	chrome.windows.create({
-		type: "panel",
-		focused: true
+	chrome.tabs.create({
+		active: true,
+		url: "https://google.com/"
+	}, () => {
+
 	})
 });

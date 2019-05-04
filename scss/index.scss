@@ -1,4 +1,35 @@
 body {
   margin: 0;
   background-color: white;
+  
+}
+
+table#internetbasics{
+  background-color: rgb(77, 147, 228);
+  border: 1px solid black rgb(77, 147, 228);
+}
+
+h2 {
+  align: center;
+}
+
+li{
+  display:inline;
+}
+
+li a {
+  display: ;
+  color: black;
+  font-size: 30px;
+  
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
