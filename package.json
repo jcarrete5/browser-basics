@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "learn": "ws -d learn_modules/public",
-    "sass": "node-sass -w --output-style compressed -o learn_modules/public/css -x learn_modules/scss"
+    "sass": "node-sass -w --output-style compressed -o learn_modules/public/css -x learn_modules/scss",
+    "tsc": "tsc -w",
+    "tsr": ""
   },
   "repository": {
     "type": "git",
