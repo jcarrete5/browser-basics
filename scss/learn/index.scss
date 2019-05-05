@@ -38,12 +38,12 @@ ul
 
 li
 {
-  display: inline-block; 
+  display: inline-block;
+  background-color: #2e2e2e;
   border: 2px solid white;
   width: 12%;
   height: 75px; 
   text-align: center;
-  
 }
 
 li a 
@@ -58,6 +58,7 @@ li a
 .title
 {
   text-align: center;
+  font-size: 70px;
 }
 
 section
@@ -75,12 +76,20 @@ section
 
 .sectionTitle
 {
-  font-size: 50px ;
+  font-size: 50px;
+  height: 50px;
+  padding-top: 80px;
+  
 }
 
 .sectionDescription
 {
   font-size: 25px;
+}
+
+.subSection
+{
+  font-size: 40px;
 }
 
 .modBox
@@ -95,6 +104,7 @@ section
 {
   width: 400px;
   height: 60px;
+  color: white;
   display: inline-block;
   vertical-align: bottom;
   margin: 10px 0;
@@ -115,12 +125,6 @@ section
   font-size: 30px;
 }
 
-.subSection
-{
-  font-size: 40px;
-}
-
-
 .module:hover 
 {
   background-color: aliceblue;
@@ -131,4 +135,10 @@ img.icon
 {
   width: 20px;
   height: 20px;
+}
+
+.modImg
+{
+  width: 500px;
+  height: 500px;
 }
