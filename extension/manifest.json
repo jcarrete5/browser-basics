@@ -1,7 +1,7 @@
 {
-  "name": "WebClippy",
+  "name": "Browser Basics",
   "version": "1.0",
-  "description": "TODO",
+  "description": "A beginners guide to the internet.",
   "manifest_version": 2,
   "browser_action": {
     "default_popup": "ui/popup.html"
