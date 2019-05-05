@@ -12,16 +12,15 @@ if (protocol === 'http' && hasPassword) {
     console.log("This site is safe");
 }
 
-// Check for 3rd party download sites
 
+// Check for 3rd party download sites
 let tp_download_sites = [
     /download\.cnet\.com/,
     /softonic\.com/
-]
-
+];
 let hostname = window.location.hostname;
 tp_download_sites.forEach((v, i, arr) => {
     if (v.test(hostname)) {
         alert("Matched bad hosts");
     }
-})
+});
