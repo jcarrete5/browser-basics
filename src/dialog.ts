@@ -5,6 +5,11 @@ chrome.runtime.onMessage.addListener(async (message, sender) => {
             try {
                 let response = await fetch(chrome.extension.getURL("ui/dialog.html"));
                 let html = await response.text();
+                let css_response = await fetch(chrome.extension.getURL('ui/css/dialog.css'));
+                let css = await css_response.text();
+
+                // Insert css into html
+                html = `<style>${css}</style>\n${html}`;
 
                 // get/create top level container
                 let container = document.getElementById("wc-dialog-scoped-content");

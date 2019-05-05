@@ -28,6 +28,7 @@
   "permissions": ["activeTab", "tabs"],
   "web_accessible_resources": [
     "ui/tutorial.html",
-    "ui/dialog.html"
+    "ui/dialog.html",
+    "ui/css/*.css"
   ]
 }

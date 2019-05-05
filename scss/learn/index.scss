@@ -5,11 +5,12 @@ body {
   //font-size: 20px;
 
    // border: 30px solid rgb(0, 0, 0);
-   
+
     //border-right: 20px solid rgb(8, 0, 0);
     //border-left: 20px solid rgb(8, 0, 0);
-    
+
 }
+
 nav ul {
   position: sticky;
   top: 0;
@@ -36,6 +37,7 @@ li a {
   display: inline;
   color: rgba(209, 214, 214, 0.938);
   font-size: 30px;
+
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -55,7 +57,7 @@ font-size: 30px ;
 }
 
 .sectionDescription{
-  
+
   font-size: 25px;
 }
 #navBar.stickyBar{
@@ -64,57 +66,20 @@ position:fixed;
 
 }
 
-//scroll-behavior
+
 .modBox{
-  display: flex;
-  width: 100%;
 
 flex-direction: row;
-justify-content: space-around;
-
-
+font-size: 20px;
 }
 
-
-
 section{
- // align-self: auto;
- // flex-direction: column;
-  align-content: center;
+align-self: auto;
+  flex-direction: column;
 }
 
 .moduleTitle{
-  width: 400px;
-  height: 60px;
-  display: inline-block;
-  vertical-align: bottom;
-  line-height: 100px;
   text-align: center;
   font-size: 30px;
- // padding: 60px;
- 
-
-}
-
-.module{
-  margin: 10px;
-  
-  background-color: #4CAF50; /* Green */
-  border: black;
-  color: white;
-  padding: 15px 70px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
-
-}
-
-.subSection{
-  font-size: 30px;
-}
-
-.title{
-
-  text-align: center;
+  padding: 30px;
 }
