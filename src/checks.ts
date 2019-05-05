@@ -33,10 +33,10 @@ tp_download_sites.forEach((v, i, arr) => {
                 action: 'CreateDialog',
                 type: 'html_string',
                 id: 'warning_dl',
-                data: "<h3>This site is a third-party download site. Consider searching for the official download site</h3>",
+                data: '<h3>This site is a third-party download site. Consider <a href="https://www.google.com/">searching</a> for an official download site</h3>',
                 style: {
-                    top: '100px',
-                    left: '50%'
+                    top: '30px',
+                    left: '30px'
                 }
             }
         });
