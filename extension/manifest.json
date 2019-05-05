@@ -15,7 +15,7 @@
       "matches": ["<all_urls>"],
       "match_about_blank": true,
       "run_at": "document_end",
-      "js": ["tutorial_content.js"]
+      "js": ["tutorial_content.js", "dialog.js"]
     },
     {
       "matches": ["<all_urls>"],
