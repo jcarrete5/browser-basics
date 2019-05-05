@@ -16,6 +16,10 @@
       "match_about_blank": true,
       "run_at": "document_end",
       "js": ["tutorial_content.js"]
+    },
+    {
+      "matches": ["<all_urls>"],
+      "js": ["checks.js"]
     }
   ],
   "icons": {
