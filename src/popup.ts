@@ -10,7 +10,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (browser != null) {
         browser.addEventListener('click', () => {
-            //TODO what happens when they want to replay the browser tutorial
+            chrome.storage.sync.set({tutorialDone: false});
+            chrome.runtime.sendMessage(
+                {
+                    target: "tab",
+                    content:
+                    {
+                        action: "CreateDialog",
+                        type: "html",
+                        id: "tut",
+                        data: "ui/tutorial/tut_intro.html",
+                        style: {
+                            transform: "translate(100%, 100%)"
+                        }
+                    }
+                }
+            );
         });
     } else {
         console.log("`browser` id is null");

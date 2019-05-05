@@ -25,7 +25,7 @@
   "icons": {
     "128": "ui/img/icon.png"
   },
-  "permissions": ["activeTab", "tabs"],
+  "permissions": ["activeTab", "tabs", "storage"],
   "web_accessible_resources": [
     "ui/*.html",
     "ui/*/*.html",

@@ -10,6 +10,15 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: $bg;
+}
+
+h1 {
+    font-size: 48pt;
+    text-align: center;
+}
+
 /* Block */
 /*********/
 
@@ -29,6 +38,17 @@ body {
 .icon {
   width: 80px;
   height: auto;
+}
+
+.paragraph {
+  font-size: 14pt;
+  text-indent: 2em;
+}
+
+.main {
+    margin: auto;
+    max-width: 70%;
+    font-family: sans-serif;
 }
 
 /* Element */
@@ -56,20 +76,6 @@ body {
   font-size: 30pt;
 }
 
-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  list-style-type: none;
-  padding: 0 0;
-  margin: 0 0;
-  width: 100%;
-  overflow: hidden;
-  background-color: rgb(82, 80, 74);
-}
 
 .subSection {
   font-size: 40px;

@@ -1,18 +1,23 @@
-chrome.runtime.sendMessage(
-    {
-        target: "tab",
-        content:
-        {
-            action: "CreateDialog",
-            type: "html",
-            id: "tut",
-            data: "ui/tutorial/tut_intro.html",
-            style: {
-                transform: "translate(100%, 100%)"
+chrome.storage.sync.get((items) => {
+    console.log('tut', items['tutorialDone']);
+    if (!items['tutorialDone']) {
+        chrome.runtime.sendMessage(
+            {
+                target: "tab",
+                content:
+                {
+                    action: "CreateDialog",
+                    type: "html",
+                    id: "tut",
+                    data: "ui/tutorial/tut_intro.html",
+                    style: {
+                        transform: "translate(100%, 100%)"
+                    }
+                }
             }
-        }
+        );
     }
-);
+});
 
 window.addEventListener("tut_omni", () => {
     chrome.runtime.sendMessage(
@@ -157,4 +162,5 @@ window.addEventListener("finish", () => {
             }
         }
     );
+    chrome.storage.sync.set({tutorialDone: true});
 });
