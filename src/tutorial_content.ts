@@ -8,13 +8,20 @@ async function inject_html(page: string) {
         container.innerHTML = html;
 
         document.body.appendChild(container);
+
+        const closeBtn = document.getElementById("wc-tut-close");
+
+        if (closeBtn) {
+            closeBtn.addEventListener("click", () => {
+                const container = document.getElementById("wc-tut-container");
+                if (container) {
+                    container.remove();
+                }
+            });
+        }
     } catch (e) {
         console.error(e);
     }
 }
 
 inject_html("/ui/tutorial.html");
-
-// chrome.tabs.getCurrent((tab) => {
-//     console.log(tab);
-// });
