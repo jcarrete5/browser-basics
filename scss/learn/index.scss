@@ -94,6 +94,7 @@ section {
   display: flex;
   width: 100%;
   flex-direction: row;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -109,16 +110,18 @@ section {
   font-size: 30px;
 }
 
-.module {
+img.module {
   margin: 10px;
   background-color: #4CAF50;
   border: black;
   color: white;
-  padding: 20px 70px;
-  text-align: center;
+  padding: 30px 30px;
   text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
+  display: inline;
+  max-width: 300px;
+  min-width: 100px;
+  max-height: auto;
+
 }
 
 .module:hover {
