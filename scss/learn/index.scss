@@ -1,27 +1,66 @@
-html
-{
+html {
   scroll-behavior: smooth;
 }
 
-body
-{
+body {
   background-color: #02142B;
-  color: rgb(243, 233, 233);
-  margin: 0 0;
+  color: white;
+  margin: 0;
+  font-family: sans-serif;
 }
 
-#navBar
-{
-  min-height: 70px;
+h1 {
+  font-size: 48pt;
+  text-align: center;
 }
 
-.stickyBar
-{
-  margin: 0 0;
+/* Block */
+/*********/
+
+.navbar {
+  position: sticky;
+  background-color: black;
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  left: 0;
 }
 
-ul
-{
+.icon {
+  width: 80px;
+  height: auto;
+}
+
+/* Element */
+/***********/
+
+.navbar__item {
+  background-color: #2e2e2e;
+  border: 2px solid white;
+  text-align: center;
+  color: unset;
+  text-decoration: none;
+  padding: 1em;
+  font-size: 14pt;
+}
+
+.category__title {
+  font-size: 36pt;
+  padding-top: 0.5em;
+  margin: 1em 0;
+}
+
+.category__desc {
+  font-size: 30pt;
+}
+
+.category__module {
+
+}
+
+ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -36,33 +75,7 @@ ul
   background-color: rgb(82, 80, 74);
 }
 
-.navItem
-{
-  display: inline-block;
-  background-color: #2e2e2e;
-  border: 2px solid white;
-  width: 12%;
-  height: 75px;
-  text-align: center;
-}
-
-.navItem a
-{
-  display: inline-block;
-  color: #4CAF50;
-  font-size: 30px;
-  text-decoration: none;
-  text-align: center;
-}
-
-.title
-{
-  text-align: center;
-  font-size: 70px;
-}
-
-section
-{
+section {
   text-align: center;
   flex-direction: column;
   background-color: rgba(78, 76, 77, 0.938);
@@ -73,38 +86,33 @@ section
   margin-left:auto;
   margin-right:auto;
   padding-bottom: 30px;
-  
+
 }
 
-.sectionTitle
-{
+.sectionTitle {
   font-size: 50px;
   height: 50px;
   padding-top: 100px;
-  
+
 }
 
-.sectionDescription
-{
+.sectionDescription {
   font-size: 25px;
 }
 
-.subSection
-{
+.subSection {
   font-size: 40px;
   padding: 20px;
 }
 
-.modBox
-{
+.modBox {
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.moduleTitle
-{
+.moduleTitle {
   width: 400px;
   height: 60px;
   color: white;
@@ -115,8 +123,7 @@ section
   font-size: 30px;
 }
 
-.module
-{
+.module {
   margin: 10px;
   background-color: #4CAF50;
   border: black;
@@ -128,20 +135,12 @@ section
   font-size: 30px;
 }
 
-.module:hover 
-{
+.module:hover {
   background-color: aliceblue;
   color: black;
 }
 
-img.icon
-{
-  width: 30px;
-  height: 30px;
-}
-
-.modImg
-{
+.modImg {
   width: 500px;
   height: 500px;
 }
