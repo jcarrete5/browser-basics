@@ -14,3 +14,7 @@ async function inject_html(page: string) {
 }
 
 inject_html("/ui/tutorial.html");
+
+// chrome.tabs.getCurrent((tab) => {
+//     console.log(tab);
+// });

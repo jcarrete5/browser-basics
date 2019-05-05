@@ -4,3 +4,7 @@ chrome.runtime.onInstalled.addListener(() => {
         url: "https://google.com/"
     });
 });
+
+chrome.runtime.onMessage.addListener(async (message, sender) => {
+    
+});

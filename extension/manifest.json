@@ -21,8 +21,9 @@
   "icons": {
     "128": "ui/img/icon.png"
   },
-  "permissions": ["activeTab"],
+  "permissions": ["activeTab", "tabs"],
   "web_accessible_resources": [
-    "ui/tutorial.html"
+    "ui/tutorial.html",
+    "ui/dialog.html"
   ]
 }
