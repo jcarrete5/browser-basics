@@ -72,13 +72,15 @@ section
   min-width: 1000px;
   margin-left:auto;
   margin-right:auto;
+  padding-bottom: 30px;
+  
 }
 
 .sectionTitle
 {
   font-size: 50px;
   height: 50px;
-  padding-top: 80px;
+  padding-top: 100px;
   
 }
 
@@ -90,6 +92,7 @@ section
 .subSection
 {
   font-size: 40px;
+  padding: 20px;
 }
 
 .modBox
@@ -133,8 +136,8 @@ section
 
 img.icon
 {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .modImg
