@@ -27,16 +27,17 @@ let tp_download_sites = [
 let hostname = window.location.hostname;
 tp_download_sites.forEach((v, i, arr) => {
     if (v.test(hostname)) {
-        console.log("MATCH");
         chrome.runtime.sendMessage({
             target: 'tab',
             content: {
                 action: 'CreateDialog',
-                type: 'text',
-                //TODO add a google search for the first party download link
+                type: 'html_string',
                 id: 'warning_dl',
-                data: "This site is a third-party download site. Consider searching for the official download site",
-                style: {top: '100px'}
+                data: "<h3>This site is a third-party download site. Consider searching for the official download site</h3>",
+                style: {
+                    top: '100px',
+                    left: '50%'
+                }
             }
         });
     }
