@@ -48,16 +48,12 @@ h1 {
 
 .category__title {
   font-size: 36pt;
-  padding-top: 0.5em;
   margin: 1em 0;
+  padding-top: 100px;
 }
 
 .category__desc {
   font-size: 30pt;
-}
-
-.category__module {
-
 }
 
 ul {
@@ -89,17 +85,6 @@ section {
 
 }
 
-.sectionTitle {
-  font-size: 50px;
-  height: 50px;
-  padding-top: 100px;
-
-}
-
-.sectionDescription {
-  font-size: 25px;
-}
-
 .subSection {
   font-size: 40px;
   padding: 20px;
@@ -118,7 +103,8 @@ section {
   color: white;
   display: inline-block;
   vertical-align: bottom;
-  margin: 10px 0;
+  margin: 20px 0;
+  padding-top: 10px;
   text-align: center;
   font-size: 30px;
 }
@@ -128,7 +114,7 @@ section {
   background-color: #4CAF50;
   border: black;
   color: white;
-  padding: 15px 70px;
+  padding: 20px 70px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
