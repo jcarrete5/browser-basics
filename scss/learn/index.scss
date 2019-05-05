@@ -32,6 +32,8 @@ h1 {
   top: 0;
   left: 0;
 
+  z-index: 999;
+
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.16);
 }
 
@@ -156,7 +158,15 @@ a {
   padding: 20px;
 
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.47);
-  // height: 80%;
+  transition: background-color .5s cubic-bezier(0.19, 1, 0.22, 1),
+    box-shadow .5s cubic-bezier(0.19, 1, 0.22, 1),
+    transform .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.module-sub-containers:hover {
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.67);
+  background-color: lighten($color: $bg, $amount: 5);
+  transform: scale(1.01);
 }
 
 .module-sub-title {
