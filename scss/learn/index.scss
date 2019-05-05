@@ -36,17 +36,17 @@ ul
   background-color: rgb(82, 80, 74);
 }
 
-li
+.navItem
 {
   display: inline-block;
+  background-color: #2e2e2e;
   border: 2px solid white;
   width: 12%;
   height: 75px;
   text-align: center;
-
 }
 
-li a
+.navItem a
 {
   display: inline-block;
   color: #4CAF50;
@@ -58,6 +58,7 @@ li a
 .title
 {
   text-align: center;
+  font-size: 70px;
 }
 
 section
@@ -71,16 +72,27 @@ section
   min-width: 1000px;
   margin-left:auto;
   margin-right:auto;
+  padding-bottom: 30px;
+  
 }
 
 .sectionTitle
 {
-  font-size: 50px ;
+  font-size: 50px;
+  height: 50px;
+  padding-top: 100px;
+  
 }
 
 .sectionDescription
 {
   font-size: 25px;
+}
+
+.subSection
+{
+  font-size: 40px;
+  padding: 20px;
 }
 
 .modBox
@@ -95,6 +107,7 @@ section
 {
   width: 400px;
   height: 60px;
+  color: white;
   display: inline-block;
   vertical-align: bottom;
   margin: 10px 0;
@@ -115,13 +128,7 @@ section
   font-size: 30px;
 }
 
-.subSection
-{
-  font-size: 40px;
-}
-
-
-.module:hover
+.module:hover 
 {
   background-color: aliceblue;
   color: black;
@@ -129,6 +136,12 @@ section
 
 img.icon
 {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.modImg
+{
+  width: 500px;
+  height: 500px;
 }
