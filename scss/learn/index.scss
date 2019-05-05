@@ -5,10 +5,10 @@ body {
   //font-size: 20px;
 
    // border: 30px solid rgb(0, 0, 0);
-   
+
     //border-right: 20px solid rgb(8, 0, 0);
     //border-left: 20px solid rgb(8, 0, 0);
-    
+
 }
 
 
@@ -41,6 +41,7 @@ li a {
   display: inline;
   color: rgba(209, 214, 214, 0.938);
   font-size: 30px;
+
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -60,7 +61,7 @@ font-size: 30px ;
 }
 
 .sectionDescription{
-  
+
   font-size: 25px;
 }
 #navBar.stickyBar{
@@ -69,23 +70,16 @@ position:fixed;
 
 }
 
-//scroll-behavior
+
 .modBox{
-  display: flex;
-  width: 100%;
 
 flex-direction: row;
-justify-content: space-around;
-
-
+font-size: 20px;
 }
 
-
-
 section{
- // align-self: auto;
- // flex-direction: column;
-  align-content: center;
+align-self: auto;
+  flex-direction: column;
 }
 
 .moduleTitle{
@@ -104,7 +98,7 @@ section{
 
 .module{
   margin: 10px;
-  
+
   background-color: #4CAF50; /* Green */
   border: black;
   color: white;
