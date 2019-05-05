@@ -1,3 +1,8 @@
+html 
+{
+  scroll-behavior: smooth;
+}
+
 body 
 {
   margin: 4;
@@ -5,16 +10,35 @@ body
   color: rgb(243, 233, 233);  
 }
 
-
-html 
-{
-  scroll-behavior: smooth;
+#navBar
+{  
+  min-height: 70px;
 }
 
-nav ul 
+ul 
 {
   position: fixed;
   top: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 500;
+  overflow: hidden;
+  background-color: rgb(82, 80, 74);
+}
+
+li
+{
+  display:inline;  
+}
+
+li a 
+{
+  display: inline;
+  color: #4CAF50;
+  font-size: 30px;
+  padding: 40px 55px;
+  text-decoration: none;
+  text-align: center;  
 }
 
 section
@@ -30,78 +54,22 @@ section
   margin-right:auto;
 }
 
-
-
-li
-{
-  display:inline;
-  
-  
-}
-
-li a 
-{
-  display: inline;
-  color: #4CAF50;
-  font-size: 30px;
-  padding: 40px 55px;
-  text-decoration: none;
-  text-align: center;
-  
-}
-
-#navBar
-{
-  
-  min-height: 70px;
-}
-
-ul 
-{
-  list-style-type: none;
-  margin: 0;
-  padding: 500;
-  overflow: hidden;
-  background-color: rgb(82, 80, 74);
-}
-
 .sectionTitle
 {
-
   font-size: 50px ;
-  
-
 }
 
 .sectionDescription
 {
-  
   font-size: 25px;
-}
-
-#navBar.stickyBar
-{
-
-  position:fixed;
-  
 }
 
 .modBox
 {
   display: flex;
   width: 100%;
-
   flex-direction: row;
   justify-content: space-around;
-
-
-}
-
-
-
-section
-{
-  align-content: center;
 }
 
 .moduleTitle
@@ -113,13 +81,11 @@ section
   margin: 10px 0;
   text-align: center;
   font-size: 30px;
-
 }
 
 .module
 {
   margin: 10px;
-  
   background-color: #4CAF50; 
   border: black;
   color: white;
@@ -128,7 +94,6 @@ section
   text-decoration: none;
   display: inline-block;
   font-size: 30px;
-
 }
 
 .subSection
@@ -138,12 +103,15 @@ section
 
 .title
 {
-
   text-align: center;
 }
 
 .navItem
 {
   min-height:100px;
+}
 
+.module:hover {
+  background-color: aliceblue;
+  color: black;
 }
