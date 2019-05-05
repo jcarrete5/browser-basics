@@ -24,7 +24,7 @@ async function inject_html(page: string) {
     }
 }
 
-inject_html("/ui/tutorial.html");
+// inject_html("/ui/tutorial.html");
 
 chrome.runtime.sendMessage(
     {
