@@ -1,5 +1,10 @@
 @import "_colors.scss";
 
+:root {
+    --arrow-transform-y: -18px;;
+    --arrow-transform-x: calc(-50% - 10px);
+}
+
 .wc-dialog-container {
     position: fixed;
     // left: 50%;
@@ -7,6 +12,28 @@
     z-index: 999999990;
 
     pointer-events: none;
+
+    transition: transform .3s ease;
+
+    max-width: 500px;
+}
+
+.wc-dialog-container.arrow::before {
+    content: " ";
+
+    position: relative;
+    z-index: 9995;
+
+    transition: top .3s ease, right .3s ease;
+}
+
+.wc-dialog-container.arrow.top::before {
+    border-bottom: 20px solid $bg;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+
+    right: var(--arrow-transform-x);
+    top: var(--arrow-transform-y);
 }
 
 .wc-dialog-inner-container {
@@ -35,20 +62,20 @@
     position: absolute;
     z-index: -1;
 
-    bottom: -5%;
-    left: -2.5%;
+    bottom: -2.5%;
+    left: -1.5%;
 
-    height: 108%;
+    height: 105%;
     opacity: 0.8;
 
-    width: 105%;
+    width: 103%;
 
     background: linear-gradient(270deg, #be371c, #f77302, #fbfd86, #4bc155, #71c6f8, #717ff8, #6301a4, #e1248f);;
     background-size: 1000% 1000%;
 
     filter: blur(10px);
 
-    animation: AnimationName 30s ease infinite;
+    animation: AnimationName 20s ease infinite;
 }
 
 @keyframes AnimationName {
@@ -78,6 +105,7 @@
 .wc-dialog-inner-container h3 {
     font-size: 15px !important;
     color: rgba(255, 255, 255, 0.8) !important;
+    text-indent: 40px;
 }
 
 .wc-dialog-inner-container h4 {
@@ -89,7 +117,7 @@
 .wc-dialog-inner-container button {
     padding: 5px 15px !important;
     margin: 0 !important;
-    margin-top: 10px !important;
+    margin-top: 15px !important;
 
     text-transform: none !important;
 
@@ -144,3 +172,46 @@
 .wc-dialog-close:hover {
     background-color: rgba(255, 255, 255, 0.116);
 }
+
+
+// .wc-dialog-arrow,
+// .wc-dialog-arrow::after {
+//     position: absolute;
+//     display: block;
+//     width: 0;
+//     height: 0;
+//     border-color: transparent;
+//     border-style: solid;
+// }
+
+// .wc-dialog-arrow::after {
+//     content: "";
+//     border-width: 4px;
+// }
+
+// .wc-dialog-arrow .top {
+//     bottom: 4px;
+//     left: 50%;
+//     margin-left: 4px;
+//     border-top-color: red;
+//     border-bottom-width: 0
+// }
+
+// .wc-dialog-arrow .top::before {
+//     // content: ' ';
+//     // bottom: 1px;
+//     // left: 50%;
+//     // margin-left: 4px;
+//     // border-top-color: red;
+//     // border-bottom-width: 0
+//     content: "";
+//     position: absolute;
+//     top: 250px;
+//     left: 174px;
+//     border-style: solid;
+//     border-width: 26px 26px 0;
+//     border-color: #000 transparent;
+//     display: block;
+//     width: 0;
+//     z-index: 0;
+// }
