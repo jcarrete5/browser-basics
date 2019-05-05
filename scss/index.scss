@@ -2,7 +2,7 @@ body {
   margin: 0;
   background-color: #02142B;
   color: rgb(243, 233, 233);
-  font-size: 20px;
+  //font-size: 20px;
 
    // border: 30px solid rgb(0, 0, 0);
    
@@ -16,7 +16,8 @@ nav ul {
 }
 
 section{
- flex-direction: row;
+ text-align: center;
+ flex-direction: column;
  background-color: rgba(78, 76, 77, 0.938);
  border: 1px solid black rgba(20, 128, 122, 0.938);
  border-radius: 25px;
@@ -72,12 +73,12 @@ font-size: 20px;
 }
 
 section{
-
+align-self: auto;
   flex-direction: column;
 }
 
 .moduleTitle{
-  
+  text-align: center;
   font-size: 30px;
+  padding: 30px;
 }
-
