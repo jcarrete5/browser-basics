@@ -1,20 +1,64 @@
-body 
-{
-  margin: 4;
-  background-color: #02142B;
-  color: rgb(243, 233, 233);  
-}
-
-
-html 
+html
 {
   scroll-behavior: smooth;
 }
 
-nav ul 
+body
 {
+  background-color: #02142B;
+  color: rgb(243, 233, 233);
+  margin: 0 0;
+}
+
+#navBar
+{
+  min-height: 70px;
+}
+
+.stickyBar
+{
+  margin: 0 0;
+}
+
+ul
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   position: fixed;
   top: 0;
+  list-style-type: none;
+  padding: 0 0;
+  margin: 0 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(82, 80, 74);
+}
+
+.navItem
+{
+  display: inline-block;
+  background-color: #2e2e2e;
+  border: 2px solid white;
+  width: 12%;
+  height: 75px;
+  text-align: center;
+}
+
+.navItem a
+{
+  display: inline-block;
+  color: #4CAF50;
+  font-size: 30px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.title
+{
+  text-align: center;
+  font-size: 70px;
 }
 
 section
@@ -24,130 +68,57 @@ section
   background-color: rgba(78, 76, 77, 0.938);
   border: 1px solid black rgba(20, 128, 122, 0.938);
   border-radius: 25px;
-  width:1000px;
+  width: 70%;
+  min-width: 1000px;
   margin-left:auto;
   margin-right:auto;
-}
-
-
-
-li
-{
-  display:inline;
+  padding-bottom: 30px;
   
-  
-}
-
-li a 
-{
-  display: inline;
-  color: #4CAF50;
-  font-size: 30px;
-<<<<<<< HEAD:scss/index.scss
-  padding: 40px 55px;
-=======
-
-  padding: 14px 16px;
->>>>>>> 2b6e0f81c1691fd3d43abc58cdf1db1cdd39bf05:scss/learn/index.scss
-  text-decoration: none;
-  text-align: center;
-  
-}
-
-#navBar
-{
-  
-  min-height: 70px;
-}
-
-ul 
-{
-  list-style-type: none;
-  margin: 0;
-  padding: 500;
-  overflow: hidden;
-  background-color: rgb(82, 80, 74);
 }
 
 .sectionTitle
 {
-
-  font-size: 35px ;
+  font-size: 50px;
+  height: 50px;
+  padding-top: 100px;
   
-
 }
 
-<<<<<<< HEAD:scss/index.scss
 .sectionDescription
 {
-  
-=======
-.sectionDescription{
-
->>>>>>> 2b6e0f81c1691fd3d43abc58cdf1db1cdd39bf05:scss/learn/index.scss
   font-size: 25px;
 }
 
-#navBar.stickyBar
+.subSection
 {
-
-  position:fixed;
-  
+  font-size: 40px;
+  padding: 20px;
 }
 
-<<<<<<< HEAD:scss/index.scss
 .modBox
 {
   display: flex;
   width: 100%;
-
   flex-direction: row;
   justify-content: space-around;
-
-
-}
-
-
-
-section
-{
-  align-content: center;
-=======
-
-.modBox{
-
-flex-direction: row;
-font-size: 20px;
-}
-
-section{
-align-self: auto;
-  flex-direction: column;
->>>>>>> 2b6e0f81c1691fd3d43abc58cdf1db1cdd39bf05:scss/learn/index.scss
 }
 
 .moduleTitle
 {
   width: 400px;
   height: 60px;
+  color: white;
   display: inline-block;
   vertical-align: bottom;
   margin: 10px 0;
   text-align: center;
   font-size: 30px;
-
 }
 
 .module
 {
   margin: 10px;
-<<<<<<< HEAD:scss/index.scss
-  
-  background-color: #4CAF50; 
-=======
-
-  background-color: #4CAF50; /* Green */
->>>>>>> 2b6e0f81c1691fd3d43abc58cdf1db1cdd39bf05:scss/learn/index.scss
+  background-color: #4CAF50;
   border: black;
   color: white;
   padding: 15px 70px;
@@ -155,25 +126,22 @@ align-self: auto;
   text-decoration: none;
   display: inline-block;
   font-size: 30px;
-
 }
 
-.subSection
+.module:hover 
 {
-  font-size: 40px;
+  background-color: aliceblue;
+  color: black;
 }
 
-.title
+img.icon
 {
-
-  text-align: center;
+  width: 30px;
+  height: 30px;
 }
-<<<<<<< HEAD:scss/index.scss
 
-.navItem
+.modImg
 {
-  min-height:100px;
-
+  width: 500px;
+  height: 500px;
 }
-=======
->>>>>>> 2b6e0f81c1691fd3d43abc58cdf1db1cdd39bf05:scss/learn/index.scss

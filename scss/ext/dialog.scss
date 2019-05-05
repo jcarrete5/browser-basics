@@ -9,7 +9,7 @@
     position: fixed;
     // left: 50%;
     // top: 50%;
-    z-index: 9990;
+    z-index: 999999990;
 
     pointer-events: none;
 
@@ -41,7 +41,7 @@
     background-color: $bg;
     box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.308);
     border-radius: 3px;
-    z-index: 9992;
+    z-index: 999999992;
 
     pointer-events: all;
 
@@ -91,7 +91,7 @@
     margin: 0 !important;
     font-weight: 700 !important;
 
-    // text-transform: none !important;
+    text-transform: none !important;
 
     line-height: normal !important;
     border: none !important;
