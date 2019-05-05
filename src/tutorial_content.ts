@@ -28,15 +28,16 @@ inject_html("/ui/tutorial.html");
 
 chrome.runtime.sendMessage(
     {
-        target: "dialog",
+        target: "tab",
         content:
         {
             action: "CreateDialog",
             type: "text",
-            content: {
-                id: "test",
-                content: "test"
-            }
+            id: "test",
+            data: "test",
+            // style: {
+            //     transform: "translate(10px, 10px)"
+            // }
         }
     }
 );

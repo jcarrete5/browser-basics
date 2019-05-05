@@ -22,7 +22,7 @@
       "js": ["checks.js"]
     }
   ],
-  "icons": {
+  "icons": { 
     "128": "ui/img/icon.png"
   },
   "permissions": ["activeTab", "tabs"],

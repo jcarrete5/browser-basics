@@ -6,18 +6,19 @@ chrome.runtime.onInstalled.addListener(() => {
 });
 
 chrome.runtime.onMessage.addListener(async (message, sender) => {
-	chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
-		const tabId = tabs[0].id;
-		if (!tabId) {
-			return;
-		}
-		switch (message.target) {
-			case "dialog":
+	switch (message.target) {
+		case "tab": {
+			chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
+				const tabId = tabs[0].id;
+				if (!tabId) {
+					return;
+				}
 				chrome.tabs.sendMessage(tabId, message.content);
-				break;
-
-			default:
-				break;
+			});
+			break;
 		}
-	});
+
+		default:
+			break;
+	}
 });
