@@ -36,7 +36,6 @@ li a {
   display: inline;
   color: rgba(209, 214, 214, 0.938);
   font-size: 30px;
-  
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -65,20 +64,57 @@ position:fixed;
 
 }
 
-
+//scroll-behavior
 .modBox{
+  display: flex;
+  width: 100%;
 
 flex-direction: row;
-font-size: 20px;
+justify-content: space-around;
+
+
 }
 
+
+
 section{
-align-self: auto;
-  flex-direction: column;
+ // align-self: auto;
+ // flex-direction: column;
+  align-content: center;
 }
 
 .moduleTitle{
+  width: 400px;
+  height: 60px;
+  display: inline-block;
+  vertical-align: bottom;
+  line-height: 100px;
   text-align: center;
   font-size: 30px;
-  padding: 30px;
+ // padding: 60px;
+ 
+
+}
+
+.module{
+  margin: 10px;
+  
+  background-color: #4CAF50; /* Green */
+  border: black;
+  color: white;
+  padding: 15px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+
+}
+
+.subSection{
+  font-size: 30px;
+}
+
+.title{
+
+  text-align: center;
 }
