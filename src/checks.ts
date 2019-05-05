@@ -10,7 +10,8 @@ if (protocol === 'https' && hasPassword) {
             action: 'CreateDialog',
             type: 'text',
             id: 'warning',
-            data: "This site isn't secure. Don't enter any sensitive information"
+            data: "This site isn't secure. Don't enter any sensitive information",
+            style: {top: '100px'}
         }
     });
 } else {
@@ -35,6 +36,7 @@ tp_download_sites.forEach((v, i, arr) => {
                 //TODO add a google search for the first party download link
                 id: 'warning_dl',
                 data: "This site is a third-party download site. Consider searching for the official download site",
+                style: {top: '100px'}
             }
         });
     }
