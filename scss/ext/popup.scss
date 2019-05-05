@@ -1,0 +1,30 @@
+@import "_colors.scss";
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.menu {
+    background-color: $bg;
+    padding: 20px;
+    color: white;
+}
+
+.title {
+    margin-top: 0;
+}
+
+.clickable {
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: $highlight;
+    color: black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.clickable:hover {
+    background-color: lighten($highlight, 11);
+}

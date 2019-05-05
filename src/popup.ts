@@ -15,4 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.log("`browser` id is null");
     }
+
+    // Choose a random quick tip
+    let tips = [
+        "You can use your email address to sign up for sites and services on the internet.",
+        "Did you know that you can shop for goods online instead of going to the store?",
+        "Wiki pages are a great place to learn more about a topic you are interested in."
+    ];
+    let tip_index = Math.floor(Math.random() * tips.length);
+    let tip_elm = document.getElementById('tip');
+    if (tip_elm != null) {
+        tip_elm.innerHTML = `<strong>Tip:</strong> ${tips[tip_index]}`;
+    } else {
+        console.log("`tip` id is null");
+    }
 });
