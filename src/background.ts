@@ -6,5 +6,5 @@ chrome.runtime.onInstalled.addListener(() => {
 });
 
 chrome.runtime.onMessage.addListener(async (message, sender) => {
-    
+
 });
