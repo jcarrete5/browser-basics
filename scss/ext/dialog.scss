@@ -74,7 +74,7 @@
 
 .wc-dialog-inner-container h3 {
     font-size: 15px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8) !important;
 }
 
 .wc-dialog-inner-container h4 {
@@ -89,14 +89,14 @@
     margin-top: 10px !important;
 
     border: none !important;
-    color: rgb(31, 31, 31);
+    color: rgb(31, 31, 31) !important;
 
-    background-color: $highlight;
-    border-radius: 3px;
+    background-color: $highlight !important;
+    border-radius: 3px !important;
 
     cursor: pointer;
 
-    box-shadow: none;
+    box-shadow: none !important;
 
     transition: background-color .5s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
