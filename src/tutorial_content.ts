@@ -34,7 +34,7 @@ chrome.runtime.sendMessage(
             action: "CreateDialog",
             type: "text",
             id: "test",
-            data: "test",
+            data: "This site isn't secure. Don't enter any sensitive information",
             // style: {
             //     transform: "translate(10px, 10px)"
             // }
