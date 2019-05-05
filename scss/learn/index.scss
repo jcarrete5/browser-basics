@@ -60,6 +60,12 @@ h1 {
   text-decoration: none;
   padding: 1em;
   font-size: 14pt;
+
+  transition: color .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.navbar__item:hover {
+  color: lighten($color: $bg, $amount: 40);
 }
 
 .category__title {
@@ -133,7 +139,7 @@ img.module {
 
 .module-category-container {
   display: grid;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 30px;
   grid-column-gap: 30px;
 
@@ -150,6 +156,7 @@ a {
   padding: 20px;
 
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.47);
+  // height: 80%;
 }
 
 .module-sub-title {
