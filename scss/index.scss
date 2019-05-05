@@ -10,6 +10,11 @@ body {
     //border-left: 20px solid rgb(8, 0, 0);
     
 }
+
+
+html {
+  scroll-behavior: smooth;
+}
 nav ul {
   position: sticky;
   top: 0;
@@ -92,9 +97,10 @@ section{
   text-align: center;
   font-size: 30px;
  // padding: 60px;
- 
-
 }
+
+
+
 
 .module{
   margin: 10px;
