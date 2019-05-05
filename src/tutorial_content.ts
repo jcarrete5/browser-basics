@@ -25,3 +25,18 @@ async function inject_html(page: string) {
 }
 
 inject_html("/ui/tutorial.html");
+
+chrome.runtime.sendMessage(
+    {
+        target: "dialog",
+        content:
+        {
+            action: "CreateDialog",
+            type: "text",
+            content: {
+                id: "test",
+                content: "test"
+            }
+        }
+    }
+);
