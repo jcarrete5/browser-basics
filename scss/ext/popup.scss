@@ -1,5 +1,4 @@
 @import "_colors.scss";
-@import "dialog.scss";
 
 body {
     margin: 0;
@@ -8,7 +7,7 @@ body {
 
 .menu {
     background-color: $bg;
-    padding: 10px;
+    padding: 20px;
     color: white;
 }
 
