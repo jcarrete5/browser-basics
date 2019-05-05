@@ -24,7 +24,7 @@ async function inject_html(page: string) {
     }
 }
 
-inject_html("/ui/tutorial.html");
+// inject_html("/ui/tutorial.html");
 
 chrome.runtime.sendMessage(
     {
@@ -32,12 +32,12 @@ chrome.runtime.sendMessage(
         content:
         {
             action: "CreateDialog",
-            type: "text",
+            type: "html",
             id: "test",
-            data: "This site isn't secure. Don't enter any sensitive information",
-            // style: {
-            //     transform: "translate(10px, 10px)"
-            // }
+            data: "ui/tutorial/tut_1.html",
+            style: {
+                top: "100px"
+            }
         }
     }
 );

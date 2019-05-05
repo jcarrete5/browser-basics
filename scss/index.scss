@@ -1,3 +1,8 @@
+html 
+{
+  scroll-behavior: smooth;
+}
+
 body 
 {
   margin: 4;
@@ -5,37 +10,25 @@ body
   color: rgb(243, 233, 233);  
 }
 
-
-html 
-{
-  scroll-behavior: smooth;
+#navBar
+{  
+  min-height: 70px;
 }
 
-nav ul 
+ul 
 {
   position: fixed;
   top: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 500;
+  overflow: hidden;
+  background-color: rgb(82, 80, 74);
 }
-
-section
-{
-  text-align: center;
-  flex-direction: column;
-  background-color: rgba(78, 76, 77, 0.938);
-  border: 1px solid black rgba(20, 128, 122, 0.938);
-  border-radius: 25px;
-  width:1000px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-
 
 li
 {
-  display:inline;
-  
-  
+  display:inline;  
 }
 
 li a 
@@ -45,62 +38,38 @@ li a
   font-size: 30px;
   padding: 40px 55px;
   text-decoration: none;
+  text-align: center;  
+}
+
+section
+{
   text-align: center;
-  
-}
-
-#navBar
-{
-  
-  min-height: 70px;
-}
-
-ul 
-{
-  list-style-type: none;
-  margin: 0;
-  padding: 500;
-  overflow: hidden;
-  background-color: rgb(82, 80, 74);
+  flex-direction: column;
+  background-color: rgba(78, 76, 77, 0.938);
+  border: 1px solid black rgba(20, 128, 122, 0.938);
+  border-radius: 25px;
+  width: 70%;
+  min-width: 1000px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .sectionTitle
 {
-
-  font-size: 35px ;
-  
-
+  font-size: 50px ;
 }
 
 .sectionDescription
 {
-  
   font-size: 25px;
-}
-
-#navBar.stickyBar
-{
-
-  position:fixed;
-  
 }
 
 .modBox
 {
   display: flex;
   width: 100%;
-
   flex-direction: row;
   justify-content: space-around;
-
-
-}
-
-
-
-section
-{
-  align-content: center;
 }
 
 .moduleTitle
@@ -112,13 +81,11 @@ section
   margin: 10px 0;
   text-align: center;
   font-size: 30px;
-
 }
 
 .module
 {
   margin: 10px;
-  
   background-color: #4CAF50; 
   border: black;
   color: white;
@@ -127,7 +94,6 @@ section
   text-decoration: none;
   display: inline-block;
   font-size: 30px;
-
 }
 
 .subSection
@@ -137,12 +103,15 @@ section
 
 .title
 {
-
   text-align: center;
 }
 
 .navItem
 {
   min-height:100px;
+}
 
+.module:hover {
+  background-color: aliceblue;
+  color: black;
 }

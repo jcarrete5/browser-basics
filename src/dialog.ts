@@ -25,23 +25,31 @@ chrome.runtime.onMessage.addListener(async (message, sender) => {
                 innerContainer.innerHTML = html;
 
                 if (message.type === "text") {
-                    innerContainer.innerHTML = innerContainer.innerHTML.replace("[$REPLACE]", `<h2>${message.data}</h2>`);
+                    innerContainer.innerHTML = innerContainer.innerHTML.replace(/\[\$REPLACE_BODY\]/g, `<h3>${message.data}</h3>`);
                 } else {
                     // html
                     let inner = await fetch(chrome.extension.getURL(message.data));
                     let innerHtml = await inner.text();
-                    innerContainer.innerHTML = innerContainer.innerHTML.replace("[$REPLACE]", innerHtml);
+                    innerContainer.innerHTML = innerContainer.innerHTML.replace(/\[\$REPLACE_BODY\]/g, innerHtml);
                 }
 
-                const innerContainerDivElem = (innerContainer.getElementsByClassName("wc-dialog-inner") as HTMLCollectionOf<HTMLDivElement>)[0];
+                innerContainer.innerHTML = innerContainer.innerHTML.replace(/\[\$REPLACE_ID\]/g, message.id);
 
-                if (innerContainerDivElem && message.style) {
+                if (innerContainer && message.style) {
                     // set css overrides
                     Object.entries(message.style).forEach((v) => {
                         let key = v[0];
                         let val = v[1] as string;
 
-                        innerContainerDivElem.style[key as unknown as number] = val;
+                        innerContainer.style[key as unknown as number] = val;
+                    });
+                }
+
+                let closeBtn = innerContainer.querySelector('.wc-dialog-close');
+                console.log(closeBtn);
+                if (closeBtn) {
+                    closeBtn.addEventListener("click", () => {
+                        innerContainer.remove();
                     });
                 }
 

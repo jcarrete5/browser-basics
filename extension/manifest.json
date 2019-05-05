@@ -22,13 +22,13 @@
       "js": ["checks.js"]
     }
   ],
-  "icons": { 
+  "icons": {
     "128": "ui/img/icon.png"
   },
   "permissions": ["activeTab", "tabs"],
   "web_accessible_resources": [
-    "ui/tutorial.html",
-    "ui/dialog.html",
+    "ui/*.html",
+    "ui/*/*.html",
     "ui/css/*.css"
   ]
 }
