@@ -26,6 +26,8 @@ chrome.runtime.onMessage.addListener(async (message, sender) => {
 
                 if (message.type === "text") {
                     innerContainer.innerHTML = innerContainer.innerHTML.replace(/\[\$REPLACE_BODY\]/g, `<h3>${message.data}</h3>`);
+                } else if(message.type === "html_string") {
+                    innerContainer.innerHTML = innerContainer.innerHTML.replace(/\[\$REPLACE_BODY\]/g, message.data);
                 } else {
                     // html
                     let inner = await fetch(chrome.extension.getURL(message.data));
@@ -46,7 +48,6 @@ chrome.runtime.onMessage.addListener(async (message, sender) => {
                 }
 
                 let closeBtn = innerContainer.querySelector('.wc-dialog-close');
-                console.log(closeBtn);
                 if (closeBtn) {
                     closeBtn.addEventListener("click", () => {
                         innerContainer.remove();

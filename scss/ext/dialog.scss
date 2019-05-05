@@ -60,27 +60,30 @@
 .wc-dialog-inner-container h1, .wc-dialog-inner-container h2, .wc-dialog-inner-container h3, .wc-dialog-inner-container h4, .wc-dialog-inner-container h5 {
     font-family: Arial, Helvetica, sans-serif !important;
     color: #fff !important;
-    padding: 0;
-    margin: 0;
-    font-weight: 700;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-weight: 700 !important;
 
-    border: none;
+    // text-transform: none !important;
+
+    line-height: normal !important;
+    border: none !important;
 }
 
 .wc-dialog-inner-container h2 {
-    font-size: 19.5px;
-    margin-bottom: 10px;
+    font-size: 19.5px !important;
+    margin-bottom: 10px !important;
 }
 
 .wc-dialog-inner-container h3 {
-    font-size: 15px;
+    font-size: 15px !important;
     color: rgba(255, 255, 255, 0.8) !important;
 }
 
 .wc-dialog-inner-container h4 {
-    opacity: 0.6;
-    margin-bottom: 10px;
-    font-size: 13px;
+    opacity: 0.6 !important;
+    margin-bottom: 10px !important;
+    font-size: 13px !important;
 }
 
 .wc-dialog-inner-container button {
@@ -88,26 +91,37 @@
     margin: 0 !important;
     margin-top: 10px !important;
 
+    text-transform: none !important;
+
     border: none !important;
     color: rgb(31, 31, 31) !important;
 
     background-color: $highlight !important;
     border-radius: 3px !important;
 
-    cursor: pointer;
+    cursor: pointer !important;
 
     box-shadow: none !important;
 
-    transition: background-color .5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    font-size: 13px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+
+    transition: background-color .3s cubic-bezier(0.215, 0.610, 0.355, 1) !important;
+
+    line-height: normal !important;
+
+    height: auto !important;
+
+    outline: none !important;
 }
 
 .wc-dialog-inner-container button:hover {
-    background-color: lighten($color: $highlight, $amount: 12);
+    background-color: lighten($color: $highlight, $amount: 13) !important;
 }
 
 .wc-dialog-inner-container button:focus,
 .wc-dialog-inner-container button:active {
-    outline: none;
+    outline: none !important;
 }
 
 .wc-dialog-close {
