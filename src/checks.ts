@@ -2,7 +2,7 @@
 let protocol = window.location.protocol;
 protocol = protocol.substring(0, protocol.length - 1);
 let hasPassword = document.querySelector('input[type="password"]') != null;
-if (protocol === 'https' && hasPassword) {
+if (protocol === 'http' && hasPassword) {
     console.log('bad');
     chrome.runtime.sendMessage({
         target: 'tab',
