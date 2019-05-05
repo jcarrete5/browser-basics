@@ -43,7 +43,12 @@ li a
   display: inline;
   color: #4CAF50;
   font-size: 30px;
+<<<<<<< HEAD:scss/index.scss
   padding: 40px 55px;
+=======
+
+  padding: 14px 16px;
+>>>>>>> 2b6e0f81c1691fd3d43abc58cdf1db1cdd39bf05:scss/learn/index.scss
   text-decoration: none;
   text-align: center;
   
@@ -72,9 +77,14 @@ ul
 
 }
 
+<<<<<<< HEAD:scss/index.scss
 .sectionDescription
 {
   
+=======
+.sectionDescription{
+
+>>>>>>> 2b6e0f81c1691fd3d43abc58cdf1db1cdd39bf05:scss/learn/index.scss
   font-size: 25px;
 }
 
@@ -85,6 +95,7 @@ ul
   
 }
 
+<<<<<<< HEAD:scss/index.scss
 .modBox
 {
   display: flex;
@@ -101,6 +112,18 @@ ul
 section
 {
   align-content: center;
+=======
+
+.modBox{
+
+flex-direction: row;
+font-size: 20px;
+}
+
+section{
+align-self: auto;
+  flex-direction: column;
+>>>>>>> 2b6e0f81c1691fd3d43abc58cdf1db1cdd39bf05:scss/learn/index.scss
 }
 
 .moduleTitle
@@ -118,8 +141,13 @@ section
 .module
 {
   margin: 10px;
+<<<<<<< HEAD:scss/index.scss
   
   background-color: #4CAF50; 
+=======
+
+  background-color: #4CAF50; /* Green */
+>>>>>>> 2b6e0f81c1691fd3d43abc58cdf1db1cdd39bf05:scss/learn/index.scss
   border: black;
   color: white;
   padding: 15px 70px;
@@ -140,9 +168,12 @@ section
 
   text-align: center;
 }
+<<<<<<< HEAD:scss/index.scss
 
 .navItem
 {
   min-height:100px;
 
 }
+=======
+>>>>>>> 2b6e0f81c1691fd3d43abc58cdf1db1cdd39bf05:scss/learn/index.scss

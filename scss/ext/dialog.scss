@@ -1,0 +1,85 @@
+.wc-dialog-container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 9990;
+
+}
+
+.wc-dialog-inner-container {
+    position: relative;
+    background-color: #02142B;
+    box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.308);
+    border-radius: 3px;
+    z-index: 9992;
+
+    left: -50%;
+    top: -50%;
+}
+
+.wc-dialog-inner {
+    background-color: #02142B;
+    padding: 40px;
+    border-radius: 3px;
+}
+
+.wc-dialog-inner::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    bottom: -5%;
+    left: -2.5%;
+
+    height: 108%;
+    opacity: 0.8;
+
+    width: 105%;
+
+    background: linear-gradient(270deg, #be371c, #f77302, #fbfd86, #4bc155, #71c6f8, #717ff8, #6301a4, #e1248f);;
+    background-size: 1000% 1000%;
+
+    filter: blur(10px);
+
+    animation: AnimationName 30s ease infinite;
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.wc-dialog-inner-container h1, .wc-dialog-inner-container h2, .wc-dialog-inner-container h3, .wc-dialog-inner-container h4, .wc-dialog-inner-container h5 {
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.wc-dialog-inner-container h2 {
+    font-size: 19.5px;
+}
+
+.wc-dialog-inner-container h4 {
+    opacity: 0.6;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.wc-dialog-inner-container button {
+    padding: 5px 15px !important;
+    margin: 0 !important;
+    margin-top: 15px !important;
+    /* float: right; */
+
+    border: none !important;
+
+    background-color: #f7e070;
+    border-radius: 3px;
+}
+
+.tutorial-1 {
+    top: 5px;
+    left: 8%;
+}
